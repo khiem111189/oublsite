@@ -1,5 +1,5 @@
 ## What is Oublsite?
-*Oublsite* is *Our blog website*
+*Oublsite* is *Our Blog webSite*
 ## References
 * The base code is from https://github.com/wagtail/bakerydemo
 * The theme is applied from https://github.com/monkeyWzr/hugo-theme-cactus
