@@ -1,0 +1,18 @@
+{% load static %}
+
+<header id="header">
+    <a href="">
+        <div id="logo" style='background-image: url("{% static 'images/logo.png' %}")'></div>
+        <div id="title">
+            <h1>{{ self.title }}</h1>
+        </div>
+    </a>
+    <div id="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <!-- <li><a href="/posts">All posts</a></li> -->
+            <li><a href="/ous">Ous</a></li>
+            <!-- <li><a href="/about">About</a></li> -->
+        </ul>
+    </div>
+</header>

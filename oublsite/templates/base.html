@@ -1,0 +1,28 @@
+{% load static wagtailuserbar %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    {% block head %}
+        {% include "includes/head.html" %}
+    {% endblock head %}
+
+    <body class="{% block body_class %}{% endblock %} max-width mx-auto px3 ltr">
+        <div class="content index py4">
+            {% include "includes/header.html" %}
+
+            {% wagtailuserbar %}
+
+            {% block content %}{% endblock %}
+
+            <!-- Footer -->
+            <footer>
+                {% include "includes/footer.html" %}
+            </footer>
+        </div>
+
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'lib/font-awesome/css/all.min.css' %}">
+        <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
